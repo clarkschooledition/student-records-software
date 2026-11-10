@@ -8,9 +8,15 @@ System::Void Register::btn_signup_Click(System::Object^ sender, System::EventArg
 {
 	String^ email = fld_email->Text->Trim();
 	String^ password = fld_passWord->Text;
-	if (String::IsNullOrWhiteSpace(email) || String::IsNullOrWhiteSpace(password))
+	String^ firstName = fld_firstName->Text->Trim();
+	String^ middleInitial = fld_middleInitial->Text->Trim();
+	String^ lastName = fld_lastName->Text->Trim();
+
+	if (String::IsNullOrWhiteSpace(email) || String::IsNullOrWhiteSpace(password) ||
+		String::IsNullOrWhiteSpace(firstName) || String::IsNullOrWhiteSpace(lastName) ||
+		cmb_courses->SelectedItem == nullptr)
 	{
-		MessageBox::Show(L"Enter an email and password.");
+		MessageBox::Show(L"Enter the required details and select a course.");
 		return;
 	}
 	if (password != fld_passWord2->Text)
@@ -21,8 +27,9 @@ System::Void Register::btn_signup_Click(System::Object^ sender, System::EventArg
 
 	try
 	{
-		SupabaseClient::SignUp(email, password);
-		MessageBox::Show(L"Registration successful. Check your email if confirmation is enabled.");
+		SupabaseClient::SignUp(email, password, firstName, middleInitial, lastName,
+			cmb_courses->SelectedItem->ToString());
+		MessageBox::Show(L"Registration successful. Check your email to confirm your account.");
 	}
 	catch (System::Net::Http::HttpRequestException^ ex)
 	{

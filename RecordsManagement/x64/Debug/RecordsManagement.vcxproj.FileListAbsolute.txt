@@ -2,3 +2,5 @@ C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\x64\Debug\Record
 C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\x64\Debug\RecordsManagement.LogInForm.resources
 C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\x64\Debug\RecordsManagement.Register.resources
 C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\x64\Debug\RecordsManagement.vcxproj.GenerateResource.cache
+C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\x64\Debug\RecordsManagement.AdminView1.resources
+C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\x64\Debug\RecordsManagement.exe

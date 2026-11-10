@@ -4,7 +4,9 @@
         "Source": "c:\\users\\aitsu\\source\\repos\\recordsmanagement\\recordsmanagement\\register.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\users\\aitsu\\source\\repos\\recordsmanagement\\recordsmanagement\\register.h"
+            "c:\\users\\aitsu\\source\\repos\\recordsmanagement\\recordsmanagement\\register.h",
+            "c:\\users\\aitsu\\source\\repos\\recordsmanagement\\recordsmanagement\\loginform.h",
+            "c:\\users\\aitsu\\source\\repos\\recordsmanagement\\recordsmanagement\\supabaseclient.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

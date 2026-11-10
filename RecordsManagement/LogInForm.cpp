@@ -1,4 +1,6 @@
 #include "LogInForm.h"
+#include "AdminView1.h"
+#include "StudentView.h"
 #include "SupabaseClient.h"
 
 using namespace RecordsManagement;
@@ -15,8 +17,25 @@ System::Void LogInForm::btn_logIn_Click(System::Object^ sender, System::EventArg
 
 	try
 	{
-		SupabaseClient::SignIn(email, password);
-		MessageBox::Show(L"Login successful.");
+		String^ role = SupabaseClient::SignIn(email, password);
+		if (role == L"admin")
+		{
+			AdminView^ view = gcnew AdminView();
+			this->Hide();
+			view->ShowDialog();
+			this->Show();
+		}
+		else if (role == L"student")
+		{
+			MyForm1^ view = gcnew MyForm1();
+			this->Hide();
+			view->ShowDialog();
+			this->Show();
+		}
+		else
+		{
+			MessageBox::Show(L"Your account has an unrecognized role.");
+		}
 	}
 	catch (System::Net::Http::HttpRequestException^ ex)
 	{

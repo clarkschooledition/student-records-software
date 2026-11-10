@@ -1,0 +1,5 @@
+C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\RecordsM.4FF38CA9\x64\Debug\RecordsManagement.vcxproj.AssemblyReference.cache
+C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\RecordsM.4FF38CA9\x64\Debug\RecordsManagement.AdminView1.resources
+C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\RecordsM.4FF38CA9\x64\Debug\RecordsManagement.LogInForm.resources
+C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\RecordsM.4FF38CA9\x64\Debug\RecordsManagement.Register.resources
+C:\Users\aitsu\source\repos\RecordsManagement\RecordsManagement\RecordsM.4FF38CA9\x64\Debug\RecordsManagement.vcxproj.GenerateResource.cache

@@ -160,6 +160,9 @@
     <ClInclude Include="SupabaseClient.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdminView1.resx">
+      <DependentUpon>AdminView1.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.h</DependentUpon>
     </EmbeddedResource>
